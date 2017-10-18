@@ -26,7 +26,7 @@ Content blocks, the `txt` files mentioned in the section above, can have three t
 
 * "text": format: `text:Lorem ipsum`, output: `<p>` element
 * "image": format: `image:imagename.ext/or/url`, output: `<img>` element
-* "link": format: `link:http://url.tdl`, output: `<a>` element
+* "link": format: `link:http://url.tld`, output: `<a>` element
 
 ---
 
