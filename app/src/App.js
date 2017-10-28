@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Meltstone from './Meltstone';
+import ReactGA from 'react-ga';
 
 class App extends React.Component {
   constructor(props) {
@@ -12,6 +13,12 @@ class App extends React.Component {
     Meltstone('content', 8).then(blocks => {
       this.setState({ blocks });
     });
+  }
+
+  componentDidMount() {
+    ReactGA.initialize('UA-108723524-1');
+    ReactGA.pageview('Landing Page');
+    // ReactGA.ga('send', 'pageview', 'Landing Page');
   }
 
   render() {
